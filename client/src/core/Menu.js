@@ -21,6 +21,7 @@ const Menu = (props) => (
 
         }}
     >
+
         <a className="navbar-brand" style={{ color: "white", fontFamily: 'Courgette, cursive' }} href="/">
             <i class="fas fa-desktop mr-2"></i>Project Collaboration
         </a>
@@ -61,7 +62,7 @@ const Menu = (props) => (
                             to={'/findpeople'}
                             style={isActive(props.history, '/findpeople')}
                         >
-                            <i className="fas fa-users mr-1"></i>Find People
+                            <i className="fas fa-users mr-1"></i>Find Collaborator
                         </Link>
                     </li> 
 
@@ -71,7 +72,7 @@ const Menu = (props) => (
                             to={'/post/create'}
                             style={isActive(props.history, '/post/create')}
                         >
-                            <i className="fas fa-plus mr-1"></i>Create Post
+                            <i className="fas fa-plus mr-1"></i>Collaboration Post
                         </Link>
                     </li> 
                     <div className="dropdown">
@@ -127,5 +128,6 @@ const Menu = (props) => (
         </div>
     </nav>    
 );
+
 
 export default withRouter(Menu);

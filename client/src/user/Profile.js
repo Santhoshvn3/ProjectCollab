@@ -132,12 +132,13 @@ class Profile extends Component {
                             {isAuthenticated().user && isAuthenticated().user._id === user._id ? (
                                 <>
                                 <div className="row">
-                                    <div className="col-md-4 col-xs-6">
+                                    <div className="col-md-6 col-xs-6">
                                         <Link 
                                             className="btn btn-sm btn-raised btn-primary"
                                             to={`/post/create`}
                                         >
-                                            Create Post
+                                           Collaboration
+                                           Post
                                         </Link>
                                     </div>
                                     <div className="col-md-4 col-xs-6">

@@ -32,6 +32,8 @@ exports.userSignupValidator = (req,res,next) => {
     .matches(/\d/) //regex for number
     .withMessage("Password must contain a number")
 
+    req.check('policy',"Please agree to user policy").notEmpty();
+
     //error
     const errors = req.validationErrors();
     if(errors){

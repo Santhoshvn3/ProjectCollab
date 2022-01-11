@@ -118,7 +118,7 @@ class NewPost extends Component {
                 />
             </div>
 
-            <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Create Post</button>
+            <button onClick={this.clickSubmit} className="btn btn-raised btn-primary">Create Collaboration Post</button>
         </form>
     );
 
@@ -131,7 +131,7 @@ class NewPost extends Component {
 
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">Create a new post</h2>
+                <h2 className="mt-5 mb-5">Create a new Collaboration post</h2>
                 <div className="alert alert-danger" style={{ display: error ? "" : "none" }}>
                     {error}
                 </div>

@@ -99,7 +99,7 @@ class FindPeople extends Component {
         const {users, open, followMessage, loading} = this.state;
         return(
             <div className="container">
-                <h2 className="mt-5 mb-5">Find People</h2>
+                <h2 className="mt-5 mb-5">Find Collaborator</h2>
                 {open && (
                     <div className="alert alert-success text-center">
                         {followMessage}
